@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<!--This is WIP HTML/CSS website of a conceptual beauty hairsalon website.
+By: James Halim
+Class: IAT 339 
+Professor: Peter Loo
+TA: Kimia Aghaei
+-->
+
+<!-- REFERENCES:
+  I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
+  web programming design exercise and is purely for educational purposes.
+Studio Ghibli logo: https://en.wikipedia.org/wiki/Studio_Ghibli
+HTML <img> tag tutorial: https://www.w3schools.com/tags/tag_img.asp
+MailChimp Pattern Library: https://ux.mailchimp.com/patterns/typography#typescale
+A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Styleguide Resources: http://styleguides.io/
+-->
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>GHIBLI Skincare | Beauty | Lifestyle</title>
+</head>
+<body>
+
+<!-- Main Container Full Width-->
+<div class="container">
+
+  <div id="header-wrapper">
+    <header>
+      <a href="#hero">
+        <div id="logo">
+          <h1><span>GHIBLI, UI Styleguide Concept: Test changes</span></h1>
+        </div>
+      </a>
+
+      <!-- Top Nav buttons -->
+      <nav>
+        <ul>
+          <li><a href="#grids">grids</a></li>
+          <li><a href="#colours">colours</a></li>
+          <li><a href="#typography">typography</a></li>
+          <li><a href="#buttons">buttons</a></li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+
+    <!--HERO SECTION-->
+  <div id="hero-wrapper">
+    <section id="hero" class="text-focus-in">
+      <h1>GHIBLI<br>UI Style Guide<br>Concept<br><span>by James-
+        Halim</span></h1>
+
+        <!-- Diviver is used as a space between sections -->
+        <div class="divider"></div>
+
+        <p>
+          The goal of this website is to provide an accessible streamlined 
+          documentation and usage of brand guidelines for GHIBLI. Designers,
+          front-end developers, and brand managers can use this style guide 
+          to apply brand consistency throughtout the development cyle of
+          this product.
+        </p>
+
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+
+    </section>
+  </div>
+
+<div class="divider"></div>
+
+  <!-- Branding and User Persona -->
+  <div id="branding-wrapper">
+
+    <section id="branding">
+
+      <h2>Branding</h2>
+
+      <p>GHIBLI is a beauty product online store that focus on skincare
+      products for all. This includes men and women that are looking 
+      for natural, non-animal tested skincare beauty products. Users
+      age can range between 18-65, focusing on both men and women
+      interested in skincare that works for their needs.
+      GHIBLI partners with various well renowned skincare companies
+      to provide their products within the store. Think of GHIBLI as
+      the Sephora for all natural skincare products. 
+      </p>
+    
+      <p>
+      <b>User Personas:</b> Hypothetically, let's imagine a customer,
+      named "Shiori" would like to purchase a skin cleanser for her
+      night-time skin routine. Since she has sensitive skin, her main
+      concern is that the cleanser that she's looking to buy might
+      damager her skin. With the user goal in mind, GHIBLI provides
+      additional product information that will help customer's like
+      Shiori to purchase her skincare products with confidence.
+      <hr>
+      </p>
+
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Typography -->
+  <div id="typography-wrapper">
+    <section id="typography">
+
+      <h2>the typography</h2>
+
+      <p>The typography uses Nunito Sans font for the header and Arial
+        font for the body paragraph.
+      </p>
+
+      <div class="nunito-container">
+        <section id="Nunito">Nunito</section>
+        <div id="h1">Header 1: 44px</div>
+        <div id="h2">Header 2: 36px</div>
+        <div id="h3">Header 3: 28px</div>
+        <div id="h4">Header 4: 20px</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="arial-container">
+        <section id="Arial">Arial</section>
+        
+        <p><b>Body Bold: 16px</b></p>
+        <p>Body: 16px</p>
+        <p>Button & Meta: 14px</p>
+
+        <a href="">Hyperlink</a>
+
+        <div class="divider"></div>
+
+        <ol>
+          <li>Ordered List</li>
+          <li>Ordered List</li>
+          <li>Ordered List</li>
+        </ol>
+
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+
+      </div>
+
+      <div class="divider"></div>
+      
+    </section>
+  </div>
+
+<!-- Full width container 100% -->
+  <div id="grid">
+
+    <!-- Grid section container at 80% width -->
+    <section id="grids">
+      <h2>the grid</h2>
+
+      <p>The grid structure is composed of one column grid,
+        a two column grid, a three column grid, and a four
+        column grid. This grid is very flexible and can be
+        changed depending on the content of any website. 
+        Although the grids can be used in a variety of 
+        ways, together, they help keep the overall visual
+        of the website consistent.
+      </p>
+
+      <div class="divider"></div>
+
+      <!-- CSS Grid -->
+      <div class="grid-container">
+        <div class="item-1">1/1</div>
+
+        <div class="item-2">1/2</div>
+        <div class="item-3">1/2</div>
+
+        <div class="item-4">1/3</div>
+        <div class="item-5">1/3</div>
+        <div class="item-6">1/3</div>
+
+        <div class="item-7">1/4</div>
+        <div class="item-8">1/4</div>
+        <div class="item-9">1/4</div>
+        <div class="item-10">1/4</div>
+
+        <div class="item-11">3/4</div>
+        <div class="item-12">1/4</div>
+      </div>
+
+
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="colour-wrapper">
+    <section id="colours">
+      <h2>the colours</h2>
+
+      <p>The colour pallete used for GHIBLI consists
+        of two natural tones colours. The primary colour
+        will white and the secondary colour would be a 
+        light beige tone. These colours will be used throughout 
+        the entirety of the website branding. 
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="colour-container">
+
+        <div class="colour-tile" id="white">
+          <div class="hex">Primary colour. #FFFFFF</div>
+        </div>
+
+        <div class="colour-tile" id="beige">
+          <div class="hex">Secondary colour. #FAF7F3</div>
+        </div>
+
+        <div class="colour-tile" id="black">
+          <div class="hex">All text. #000000</div>
+        </div>
+
+        <div class="colour-tile" id="yellow">
+          <div class="hex">Buttons. #EC9900</div>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="image-wrapper">
+    <section id="images">
+      <h2>the image</h2>
+
+      <p>The imagery used in GHIBLI incorporates actual people using the 
+        products. Studies have shown that humans gravitate towards products
+        that they can imagine using. The imagery focuses on humans using
+        the products in a real-world environment.
+      </p>
+
+      <div class="flex-container">
+        <div class="image-1">
+          <img class="item" src="https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80" alt="An image of a women applying skincare">
+        </div>
+        <div class="image-2">
+          <img class="item" src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="An image of a women applying skincare">
+        </div>
+        <div class="image-3">
+          <img class="item" src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="An image of a women applying skincare">
+        </div>
+        <div class="image-4">
+          <img class="item" src="https://images.unsplash.com/photo-1577746838851-816a43ca8733?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNraW4lMjBjYXJlfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=1400&q=60" alt="An image of a women applying skincare">
+        </div>
+      </div>
+      
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Button Container -->
+
+  <div class="button-wrapper">
+    <section id="buttons">
+      <h2>the buttons</h2>
+
+      <p>Buttons within the site have three different states: default state,
+        hover state, and active. Below you will see the visualization of each
+        CTA button states.
+      </p>
+
+      <div id="button-flex">
+        <button class="default-button">DEFAULT</button>
+        <button class="hover-button">HOVER</button>
+        <button class="active-button">ACTIVE</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="divider"></div>
+
+    <!-- Forms Container -->
+
+  <form>
+    <label for="Name"><h3>Contact Us:</h3></label>
+    <p>Have questions about our product? Leave us a message and
+      our team of experts will reply as soon as possible!
+    </p>
+    <input type="Text" id="name" name="name">
+    <input type="submit" value="Submit">
+    <input type="Reset" value="Reset">
+  </form>
+
+  <div class="divider"></div>
+
+  <!-- Product Listing --> 
+
+  <h2>the products</h2>
+  <div class="divider"></div>
+
+  <section class="products">
+
+    <div class="product-card">
+
+      <div class="product-image">
+        <a href="https://us.innisfree.com/products/pore-clearing-clay-mousse-mask-2x">
+          <img src="https://cdn.shopify.com/s/files/1/0071/4653/7026/products/buy-innisfree-super-volcanic-clay-mousse-mask-2x-100ml-at-lila-beauty-korean-and-japanese-beauty-skin-care-374055_800x.jpg?v=1636685679" alt="Innis Pore Cleanser">
+        </a>
+        <div class="product-info">
+          <h3>Innis Pore Cleanser</h3>
+          <p>A clay mask in a light-as-air <br>mousse..</p>
+          <p><b><i>Great for sensitive skin</i></b></p>
+          <p><b>CA$32.00</p></b>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <a href="https://www.rhodeskin.com/products/peptide-glazing-fluid">
+          <img src="https://cdn.shopify.com/s/files/1/0606/5451/8510/products/Peptide-Glazing-Fluid-White_1024x1024.jpg?v=1654367862" alt="Peptide Glazing Fluid">
+        </a>
+        <div class="product-info">
+          <h3>Peptide Glazing Fluid</h3>
+          <p>Hailey’s signature step to dewy, <br>glazed skin..</p>
+          <p><b>CA$39.00</p></b>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <a href="https://www.yesstyle.com/en/cosrx-advanced-snail-96-mucin-power-essence-100ml/info.html/pid.1052684695">
+          <img src="https://cdn.shopify.com/s/files/1/1321/7315/products/AX6H9532W.jpg?v=1571110139" alt="Cosrx Advanced Snail">
+        </a>
+        <div class="product-info">
+          <h3>Cosrx Advanced</h3>
+          <p>advanced snail mucin<br>essence from Korea..</p>
+          <p><b>CA$19.00</p></b>
+        </div>
+      </div>
+
+      <div class="product-image">
+        <a href="https://www.yesstyle.com/en/missha-all-around-safe-block-essence-sun-milk-ex-2022-ex-version-70ml/info.html/pid.1113493673">
+          <img src="https://laz-img-sg.alicdn.com/p/3c998bc50b992a0bffa2a2102fd915d2.jpg" alt="Missha Sunscreen">
+        </a>
+        <div class="product-info">
+          <h3>Missha Sun Milk</h3>
+          <p>Strengthened with SPF50+ PA+++ that..</p>
+          <p><b>CA$29.00</p></b>
+        </div>
+      </div>
+    
+    </div>
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Radio button input field and label --> 
+
+  <h2>checkout</h2>
+
+  <div class="divider"></div>
+
+  <form> 
+    <label for="payment">Payment</label> 
+    <input type="radio" style="vertical-align: middle; margin: 0px" id="payment" name="payment" value="credit"> 
+    <label for="credit">Credit</label> 
+    <input type="radio" style="vertical-align: middle; margin: 0px" id="payment" name="payment" value="debit"> 
+    <label for="debit">Debit</label> 
+    <input type="submit" style="vertical-align: middle; margin: 0px" id="submit-button" value="Submit">
+  </form> 
+
+
+  <div class="divider"></div>
+
+  <!-- Checkout cart --> 
+
+  <div class="col-25">
+    <div class="cart">
+      <h3>cart
+        <span class="price" style="color:black">
+          <i class="shopping-cart"></i>
+          <b>2</b>
+        </span>
+      </h3>
+      <p><a href="#">Cosrx Advanced</a> <span class="price">$19</span></p>
+      <p><a href="#"">Missha Sun Milk</a> <span class="price">$29</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$48</b></span></p>
+    </div>
+  </div>
+
+
+
+</div>
+<!-- Main Container Ends -->
+</body>
+
+
+
+
+<script>
+  $('a[href*="#"]').on('click',function (e) {
+    e.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500, 'linear');
+  });
+</script>
+</html>

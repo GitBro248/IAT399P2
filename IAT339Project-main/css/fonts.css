@@ -1,0 +1,34 @@
+/*
+    Here we are declaring our fonts for this page
+*/
+
+/*
+    Import Font below here
+*/
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Nunito+Sans:wght@300;600&display=swap');
+
+/* 
+font-family: 'Domine', serif;
+font-family: 'Nunito Sans', sans-serif; 
+*/
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Clara';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Clara/ClaraAntiqua.otf');
+}
+
+@font-face {
+    font-family: 'Didot';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Didot/Didot/');
+}
