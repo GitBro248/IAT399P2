@@ -1,568 +1,287 @@
-<!DOCTYPE html>
-
-<!--This is WIP HTML/CSS website of a conceptual beauty hairsalon website.
-By: James Halim
+<!--IAT 339, Project 2
+By: James Halim, Asher 
 Class: IAT 339 
 Professor: Peter Loo
 TA: Kimia Aghaei
 -->
 
 <!-- REFERENCES:
-  I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
-  web programming design exercise and is purely for educational purposes.
+I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
+web programming design exercise and is purely for educational purposes.
 Studio Ghibli logo: https://en.wikipedia.org/wiki/Studio_Ghibli
 HTML <img> tag tutorial: https://www.w3schools.com/tags/tag_img.asp
 MailChimp Pattern Library: https://ux.mailchimp.com/patterns/typography#typescale
 A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 Styleguide Resources: http://styleguides.io/
+
+References:
+
+<FONTS>
+Lora font:
+https://fonts.google.com/specimen/Lora
+
+
+<IMAGES>
+Glossier:
+https://www.today.com/shop/glossier-black-friday-best-glossier-black-friday-deals-2021-t240117
+
+Rhode:
+https://www.getthegloss.com/beauty/skincare/hailey-bieber-skincare-brand-rhode
+
+Missha:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fmisshaus.com%2F&psig=AOvVaw1I0kJKpRvtQo9a1ad1Hy7A&ust=1678419530710000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjukZH2zf0CFQAAAAAdAAAAABAE
+
+Men Skincare Image:
+https://jingdaily.com/young-chinese-male-drive-skincare-market/
+
+Women Skincare Image:
+https://www.realsimple.com/beauty-fashion/skincare/anti-aging/best-skincare-routine-for-40s
+
+
+<CODE>
+Import Google Fonts in CSS
+https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html
+
+Variable CSS:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+
+nth-child() Selector
+https://www.w3schools.com/cssref/sel_nth-child.php
+
+<ICONS>
+Fav Icon:
+https://www.onlinewebfonts.com/icon/470639
+
+Remix Icon:
+https://remixicon.com/
+
+New to Update: Footer & Breakpoints
+
 -->
-
-<html lang="en">
-
-
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>GHIBLI Skincare | Beauty | Lifestyle</title>
-</head>
-<body>
-
-<!-- Main Container Full Width-->
-    <div class="container">
-
-        <div id="header-wrapper">
-            <header>
-                <a href="#hero">
-                    <div id="logo">
-                        <h1><span>GHIBLI, UI Styleguide Concept: Test changes</span></h1>
-                    </div>
-                </a>
-
-                <!-- Top Nav buttons -->
-               <nav>
-                <ul>
-                    <li><a href="index.html">GHIBLI</a></li>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="products.html">products</a></li>
-                    <li><a href="contacts.html">contacts</a></li>
-                    <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49A.996.996 0 0 0 20.01 4H5.21l-.94-2H1v2h2l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2z"/></svg></a></li>
-                </ul>
-            </nav>
-
-            </header>
-        </div>
-        <video controls autoplay width="450" height="800">
-            <source src="Missha.mp4"type="video/mp4">
-        </video>
-        <!--HERO SECTION-->
-
-        <div id="hero-wrapper">
-            <section id="hero" class="text-focus-in">
-                <h1>
-                    GHIBLI<br>
-                        by James-
-                        Halim and Asher Damla
-                    </span>
-                </h1>
-
-                <!-- Diviver is used as a space between sections -->
-                <div class="divider"></div>
-
-                <p>
-                    Introducing Ghibli - the ultimate solution for healthy, glowing skin. Our carefully crafted line of skincare and cosmetics is made from the finest natural ingredients, formulated to nourish and enhance your beauty. Experience the magic of Ghibli and unlock the secret to timeless radiance.
-                </p>
-
-                <i class="fa-sharp fa-solid fa-chevron-down"></i>
-
-            </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Branding and User Persona -->
-        <div id="branding-wrapper">
-
-            <section id="branding">
-
-                <h2>Branding</h2>
-
-                <p>
-                    GHIBLI is a beauty product online store that focus on skincare
-                    products for all. This includes men and women that are looking
-                    for natural, non-animal tested skincare beauty products. Users
-                    age can range between 18-65, focusing on both men and women
-                    interested in skincare that works for their needs.
-                    GHIBLI partners with various well renowned skincare companies
-                    to provide their products within the store. Think of GHIBLI as
-                    the Sephora for all natural skincare products.
-                </p>
-
-                <p>
-                    <b>User Personas:</b> Hypothetically, let's imagine a customer,
-                    named "Shiori" would like to purchase a skin cleanser for her
-                    night-time skin routine. Since she has sensitive skin, her main
-                    concern is that the cleanser that she's looking to buy might
-                    damager her skin. With the user goal in mind, GHIBLI provides
-                    additional product information that will help customer's like
-                    Shiori to purchase her skincare products with confidence.
-                    <hr>
-                </p>
-
-            </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Typography -->
-        <div id="typography-wrapper">
-            <section id="typography">
-
-                <h2>the typography</h2>
-
-                <p>
-                    The typography uses Nunito Sans font for the header and Arial
-                    font for the body paragraph.
-                </p>
-
-                <div class="nunito-container">
-                    <section id="Nunito">Nunito</section>
-                    <div id="h1">Header 1: 44px</div>
-                    <div id="h2">Header 2: 36px</div>
-                    <div id="h3">Header 3: 28px</div>
-                    <div id="h4">Header 4: 20px</div>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="arial-container">
-                    <section id="Arial">Arial</section>
-
-                    <p><b>Body Bold: 16px</b></p>
-                    <p>Body: 16px</p>
-                    <p>Button & Meta: 14px</p>
-
-                    <a href="">Hyperlink</a>
-
-                    <div class="divider"></div>
-
-                    <ol>
-                        <li>Ordered List</li>
-                        <li>Ordered List</li>
-                        <li>Ordered List</li>
-                    </ol>
-
-                    <li>Unordered List</li>
-                    <li>Unordered List</li>
-                    <li>Unordered List</li>
-
-                </div>
-
-                <div class="divider"></div>
-
-            </section>
-        </div>
-
-        <!-- Full width container 100% -->
-        <div id="grid">
-
-            <!-- Grid section container at 80% width -->
-            <section id="grids">
-                <h2>the grid</h2>
-
-                <p>
-                    The grid structure is composed of one column grid,
-                    a two column grid, a three column grid, and a four
-                    column grid. This grid is very flexible and can be
-                    changed depending on the content of any website.
-                    Although the grids can be used in a variety of
-                    ways, together, they help keep the overall visual
-                    of the website consistent.
-                </p>
-
-                <div class="divider"></div>
-
-                <!-- CSS Grid -->
-                <div class="grid-container">
-                    <div class="item-1">1/1</div>
-
-                    <div class="item-2">1/2</div>
-                    <div class="item-3">1/2</div>
-
-                    <div class="item-4">1/3</div>
-                    <div class="item-5">1/3</div>
-                    <div class="item-6">1/3</div>
-
-                    <div class="item-7">1/4</div>
-                    <div class="item-8">1/4</div>
-                    <div class="item-9">1/4</div>
-                    <div class="item-10">1/4</div>
-
-                    <div class="item-11">3/4</div>
-                    <div class="item-12">1/4</div>
-                </div>
-
-
-            </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <div id="colour-wrapper">
-            <section id="colours">
-                <h2>the colours</h2>
-
-                <p>
-                    The colour pallete used for GHIBLI consists
-                    of two natural tones colours. The primary colour
-                    will white and the secondary colour would be a
-                    light beige tone. These colours will be used throughout
-                    the entirety of the website branding.
-                </p>
-
-                <div class="divider"></div>
-
-                <div class="colour-container">
-
-                    <div class="colour-tile" id="white">
-                        <div class="hex">Primary colour. #FFFFFF</div>
-                    </div>
-
-                    <div class="colour-tile" id="beige">
-                        <div class="hex">Secondary colour. #FAF7F3</div>
-                    </div>
-
-                    <div class="colour-tile" id="black">
-                        <div class="hex">All text. #000000</div>
-                    </div>
-
-                    <div class="colour-tile" id="yellow">
-                        <div class="hex">Buttons. #EC9900</div>
-                    </div>
-
-                </div>
-
-            </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <div id="image-wrapper">
-            <section id="images">
-                <h2>the image</h2>
-
-                <p>
-                    The imagery used in GHIBLI incorporates actual people using the
-                    products. Studies have shown that humans gravitate towards products
-                    that they can imagine using. The imagery focuses on humans using
-                    the products in a real-world environment.
-                </p>
-
-                <div class="flex-container">
-                    <div class="image-1">
-                        <img class="item" src="https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80" alt="An image of a women applying skincare">
-                    </div>
-                    <div class="image-2">
-                        <img class="item" src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="An image of a women applying skincare">
-                    </div>
-                    <div class="image-3">
-                        <img class="item" src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="An image of a women applying skincare">
-                    </div>
-                    <div class="image-4">
-                        <img class="item" src="https://images.unsplash.com/photo-1577746838851-816a43ca8733?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNraW4lMjBjYXJlfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=1400&q=60" alt="An image of a women applying skincare">
-                    </div>
-                </div>
-
-            </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Button Container -->
-
-        <div class="button-wrapper">
-            <section id="buttons">
-                <h2>the buttons</h2>
-
-                <p>
-                    Buttons within the site have three different states: default state,
-                    hover state, and active. Below you will see the visualization of each
-                    CTA button states.
-                </p>
-
-                <div id="button-flex">
-                    <button class="default-button">DEFAULT</button>
-                    <button class="hover-button">HOVER</button>
-                    <button class="active-button">ACTIVE</button>
-                </div>
-            </section>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- Forms Container -->
-
-        <form>
-            <label for="name"><h3>Contact Us:</h3></label>
-            <p>Have questions about our product? Leave us a message and our team of experts will reply as soon as possible!</p>
-            <input type="text" id="name" name="name">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
-
-        <div class="divider"></div>
-        <div>
-
-
-
-        </div>
-
-        <!-- Product Listing -->
-
-
-
-
-
-
-        <h2>the products</h2>
-        <div class="divider"></div>
-
-        <section class="products">
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <a href="https://us.innisfree.com/products/pore-clearing-clay-mousse-mask-2x">
-                        <img src="https://cdn.shopify.com/s/files/1/0071/4653/7026/products/buy-innisfree-super-volcanic-clay-mousse-mask-2x-100ml-at-lila-beauty-korean-and-japanese-beauty-skin-care-374055_800x.jpg?v=1636685679" alt="Innis Pore Cleanser">
-                    </a>
-                    <div class="product-info">
-                        <h3>Innis Pore Cleanser</h3>
-                        <div class="rate">
-                            <input type="radio" id="star5" name="rate" value="5" />
-                            <label for="star5" title="text">5 stars</label>
-                            <input type="radio" id="star4" name="rate" value="4" />
-                            <label for="star4" title="text">4 stars</label>
-                            <input type="radio" id="star3" name="rate" value="3" />
-                            <label for="star3" title="text">3 stars</label>
-                            <input type="radio" id="star2" name="rate" value="2" />
-                            <label for="star2" title="text">2 stars</label>
-                            <input type="radio" id="star1" name="rate" value="1" />
-                            <label for="star1" title="text">1 star</label>
-                        </div>
-                        <p>A clay mask in a light-as-air <br>mousse..</p>
-                        <p><b><i>Great for sensitive skin</i></b></p>
-                        <p><b>CA$32.00</p></b>
-                    </div>
-                </div>
-
-                <div class="product-image">
-                    <a href="https://www.rhodeskin.com/products/peptide-glazing-fluid">
-                        <img src="https://cdn.shopify.com/s/files/1/0606/5451/8510/products/Peptide-Glazing-Fluid-White_1024x1024.jpg?v=1654367862" alt="Peptide Glazing Fluid">
-                    </a>
-                    <div class="product-info">
-                        <h3>Peptide Glazing Fluid</h3>
-
-                        <div class="rate">
-                            <input type="radio" id="star5" name="rate" value="5" />
-                            <label for="star5" title="text">5 stars</label>
-                            <input type="radio" id="star4" name="rate" value="4" />
-                            <label for="star4" title="text">4 stars</label>
-                            <input type="radio" id="star3" name="rate" value="3" />
-                            <label for="star3" title="text">3 stars</label>
-                            <input type="radio" id="star2" name="rate" value="2" />
-                            <label for="star2" title="text">2 stars</label>
-                            <input type="radio" id="star1" name="rate" value="1" />
-                            <label for="star1" title="text">1 star</label>
-                        </div>
-                        <div>
-                            <p>Hailey’s signature step to dewy, <br>glazed skin..</p>
-                            <p><b>CA$39.00</p></b>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-image">
-                    <a href="https://www.yesstyle.com/en/cosrx-advanced-snail-96-mucin-power-essence-100ml/info.html/pid.1052684695">
-                        <img src="https://cdn.shopify.com/s/files/1/1321/7315/products/AX6H9532W.jpg?v=1571110139" alt="Cosrx Advanced Snail">
-                    </a>
-                    <div class="product-info">
-                        <h3>Cosrx Advanced</h3>
-                        <div class="rate">
-                            <input type="radio" id="star5" name="rate" value="5" />
-                            <label for="star5" title="text">5 stars</label>
-                            <input type="radio" id="star4" name="rate" value="4" />
-                            <label for="star4" title="text">4 stars</label>
-                            <input type="radio" id="star3" name="rate" value="3" />
-                            <label for="star3" title="text">3 stars</label>
-                            <input type="radio" id="star2" name="rate" value="2" />
-                            <label for="star2" title="text">2 stars</label>
-                            <input type="radio" id="star1" name="rate" value="1" />
-                            <label for="star1" title="text">1 star</label>
-                        </div>
-                        <div></div>
-                        <p>advanced snail mucin<br>essence from Korea..</p>
-                        <p><b>CA$19.00</p></b>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-image">
-                <a href="https://www.yesstyle.com/en/missha-all-around-safe-block-essence-sun-milk-ex-2022-ex-version-70ml/info.html/pid.1113493673">
-                    <img src="https://laz-img-sg.alicdn.com/p/3c998bc50b992a0bffa2a2102fd915d2.jpg" alt="Missha Sunscreen">
-                </a>
-                <div class="product-info">
-                    <h3>Missha Sun Milk</h3>
-                    <div class="rate">
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5" title="text">5 stars</label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4" title="text">4 stars</label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3" title="text">3 stars</label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2" title="text">2 stars</label>
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1" title="text">1 star</label>
-                    </div>
-                    <p>Strengthened with SPF50+ PA+++ that..</p>
-                    <p><b>CA$29.00</p></b>
-                </div>
-            </div>
-
-    </div>
-
-        </section>
-
-        <div class="divider"></div>
-
-        <!-- Radio button input field and label -->
-
-        <h2>checkout</h2>
-
-        <div class="divider"></div>
-
-        <form>
-            <label for="payment">Payment</label>
-            <input type="radio" style="vertical-align: middle; margin: 0px" id="payment" name="payment" value="credit">
-            <label for="credit">Credit</label>
-            <input type="radio" style="vertical-align: middle; margin: 0px" id="payment" name="payment" value="debit">
-            <label for="debit">Debit</label>
-            <input type="submit" style="vertical-align: middle; margin: 0px" id="submit-button" value="Submit">
-        </form>
-
-
-        <div class="divider"></div>
-
-        <!-- Checkout cart -->
-
-        <div class="col-25">
-            <div class="cart">
-                <h3>
-                    cart
-                    <span class="price" style="color:black">
-                        <i class="shopping-cart"></i>
-                        <b>2</b>
-                    </span>
-                </h3>
-
-                <p><a href="#">Cosrx Advanced</a> <span class="price">$19</span></p>
-                <p><a href="#" ">Missha Sun Milk</a> <span class="price">$29</span></p>
-                <hr>
-                <p>Total <span class="price" style="color:black"><b>$48</b></span></p>
-            </div>
-        </div>
-
-
-
-    </div>
-<!-- Main Container Ends -->
-</body>
-
-
-
-
-<script>
-  $('a[href*="#"]').on('click',function (e) {
-    e.preventDefault();
-
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 500, 'linear');
-  });
-</script>
-</html>
 
 <!DOCTYPE html>
-<!--This is WIP HTML/CSS website of a conceptual beauty hairsalon website.
-By: James Halim
-Class: IAT 339 
-Professor: Peter Loo
-TA: Kimia Aghaei
--->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- REFERENCES:
-  I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
-  web programming design exercise and is purely for educational purposes.
-Studio Ghibli logo: https://en.wikipedia.org/wiki/Studio_Ghibli
-HTML <img> tag tutorial: https://www.w3schools.com/tags/tag_img.asp
-MailChimp Pattern Library: https://ux.mailchimp.com/patterns/typography#typescale
-A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-Styleguide Resources: http://styleguides.io/
--->
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-<html lang="en">
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>GHIBLI Skincare | Beauty | Lifestyle</title>
-</head>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="css/main.css">
 
-<body>
-  <!-- Main Container Full Width-->
-  <div class="container">
-    <div id="header-wrapper">
-        <header>
-            <a href="#hero">
-                <div id="logo">
-                    <h1><span>GHIBLI, UI Styleguide Concept: Test changes</span></h1>
+        <title>Ghibli Skin Care</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    GHIBLI.
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-line"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">
+                                <i class="ri-price-tag-3-line"></i>
+                                <span>New</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#collection" class="nav__link">
+                                <i class="ri-compass-line"></i>
+                                <span>Collection</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">
+                                <i class="ri-t-shirt-line"></i>
+                                <span>Products</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <!-- Top Nav buttons -->
-            <nav>
-                <ul>
-                    <li><a href="index.html>GHIBLI</a></li>
-                    <li><a href="index.html"">home</a></li>
-                    <li><a href="products.html">products</a></li>
-                    <li><a href="contacts.html">contacts</a></li>
-                    <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49A.996.996 0 0 0 20.01 4H5.21l-.94-2H1v2h2l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2z"/></svg></a></li>
-                </ul>
             </nav>
         </header>
-    </div>
 
-    <!--HERO SECTION-->
-    <div id="hero-wrapper">
-      <section id="hero" class="text-focus-in">
-        <h1>GHIBLI<br>UI Style Guide<br>Concept<br><span>by James-
-            Halim</span></h1>
-        <!-- Diviver is used as a space between sections -->
-        <div class="divider"></div>
-        <p>
-          The goal of this website is to provide an accessible streamlined 
-          documentation and usage of brand guidelines for GHIBLI. Designers,
-          front-end developers, and brand managers can use this style guide 
-          to apply brand consistency throughtout the development cyle of
-          this product.
-        </p>
-        <i class="fa-sharp fa-solid fa-chevron-down"></i>
-      </section>
-    </div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            New Product <br>
+                            Collection
+                        </h1>
+    
+                        <p class="home__description">
+                            The new collection of our latest skincare products <br> 
+                            from the best brands this year.
+                        </p>
 
-    <div class="divider"></div>
+                        <a href="#new" class="button__link">
+                            Explore <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
 
-    <!-- Branding and User Persona -->
-    <div id="branding-wrapper">
+                    <div class="home__images">
+                        <img src="img/rhode2.jpg" alt="Hailey Bieber's Rhode Product">
+                        <img src="img/cleansers.png" alt="An image of various skincare products">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section" id="new">
+                <h2 class="section__title">
+                    Latest Deals & Offers
+                </h2>
+
+                <div class="new__container container grid">
+                    <article class="new__card">
+                        <img src="img/rhodenew.png" alt="new image" class="new__img">
+
+                        <a href="#" class="new__link">
+                            <div class="new__data">
+                                <h2 class="new__title">
+                                    Rhode Deals
+                                </h2>
+                                <span class="new__subtitle">
+                                    Checkout the latest Rhode skincare products
+                                </span>
+                            </div>
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="new__card">
+                        <img src="img/glossiernew.webp" alt="new image" class="new__img">
+
+                        <a href="#" class="new__link">
+                            <div class="new__data">
+                                <h2 class="new__title">
+                                    Glossier Deals
+                                </h2>
+                                <span class="new__subtitle">
+                                    Shop the latest deals
+                                </span>
+                            </div>
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="new__card">
+                        <img src="img/misshanew.webp" alt="new image" class="new__img">
+
+                        <a href="#" class="new__link">
+                            <div class="new__data">
+                                <h2 class="new__title">
+                                    Missha Deals
+                                </h2>
+                                <span class="new__subtitle">
+                                    Checkout the best of 2022 collection
+                                </span>
+                            </div>
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== COLLECTION ====================-->
+            <section class="collection section" id="collection">
+                <div class="collection__container container">
+                    <div class="collection__explore">
+                        <div class="collection__data-men">
+                            <h2 class="collection__title">
+                                Men <br>
+                                Skincare
+                            </h2>
+                            <a href="#" class="button__link">
+                                Explore skincare for men  <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <img src="img/menskincare.jpeg" alt="collection image">
+                    </div>
+
+                    <div class="collection__explore">
+                        <img src="img/womenskincare.jpeg" alt="collection image">
+
+                        <div class="collection__data-women">
+                            <h2 class="collection__title">
+                                Women <br>
+                                Skincare
+                            </h2>
+                            <a href="#" class="button__link">
+                                Explore skincare for women  <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>                 
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section" id="products">
+                <h2 class="section__title">
+                    Best Products
+                </h2>
+
+                <div class="products__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="products__card swiper-slide">
+                            <a href="https://www.rhodeskin.com/products/peptide-glazing-fluid"><img src="img/peptide.jpeg" alt="product image" class="products__img"></a>
+
+                            <h2 class="products__title">
+                                Peptide Glazing Fluid
+                            </h2>
+                            <span class="products__price">
+                                $29.99
+                            </span>
+                        </article>
+
+                        <article class="products__card swiper-slide">
+                            <a href="https://www.glossier.com/products/milky-jelly-cleanser"><img src="img/glossier cleanser.png" alt="product image" class="products__img"></a>
+
+                            <h2 class="products__title">
+                                Milk Jelly Cleanser
+                            </h2>
+                            <span class="products__price">
+                                $10
+                            </span>
+                        </article>
+
+                    </div>
+                    <!-- <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </div> -->
+                </div>
+            </section>
+
+            <!--==================== BRANDS ====================-->
+
+        <!--==================== FOOTER ====================-->
+    </body>
+</html>
