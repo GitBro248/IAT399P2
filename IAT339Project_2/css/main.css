@@ -351,20 +351,99 @@ img {
 }
 
 /*=============== BRANDS ===============*/
-.brand__container {
-  grid-template-columns: repeat(2, max-content);
-  justify-content: center;
-  column-gap: 1.25rem;
+.brandcontainer {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 1.25rem;
 }
 
-.brand__img {
-  width: 120px;
+.brandimg {
+    width: 120px;
 }
 
-.brand__img:nth-child(even) {
-  margin-top: 2rem;
+    .brandimg:nth-child(even) {
+        margin-top: 2rem;
+    }
+
+/*=============== FOOTER ===============*/
+.footercontainer {
+    row-gap: 3rem;
 }
 
+.footerlogo {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    display: inline-block;
+    margin-bottom: .75rem;
+}
+
+.footercontent,
+.footerlinks {
+    display: grid;
+}
+
+.footercontent {
+    grid-template-columns: repeat(2, max-content);
+    gap: 3.5rem 3rem;
+}
+
+.footertitle {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.footerlinks {
+    row-gap: .75rem;
+}
+
+.footerlink,
+.footerinformation {
+    font-size: var(--small-font-size);
+}
+
+.footerlink {
+    color: var(--text-color);
+    transition: .3s;
+}
+
+    .footerlink:hover {
+        text-decoration: underline;
+        color: var(--title-color);
+    }
+
+.footersocial {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.footersocial-link {
+    display: inline-flex;
+    color: var(--title-color);
+    padding: .4rem;
+    background-color: var(--container-color);
+    font-size: 1.25rem;
+    transition: background-color .3s;
+}
+
+    .footersocial-link:hover {
+        background-color: var(--bg-color-light);
+    }
+
+.footerinfo {
+    margin-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .75rem;
+}
+
+.footercopy,
+.footerprivacy {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
