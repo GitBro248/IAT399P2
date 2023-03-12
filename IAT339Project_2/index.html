@@ -5,6 +5,14 @@ Professor: Peter Loo
 TA: Kimia Aghaei
 -->
 
+<!--
+    P2 Progress Checklist:
+    1-some requirements are still not implemented: contact info-about us-checkout and payment forms.
+    2- when clicking on a product, the user is directed to the actual website of the products. 
+    please design a page that as detail about products designed by YOU.
+-->
+
+
 <!-- REFERENCES:
 I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
 web programming design exercise and is purely for educational purposes.
@@ -80,14 +88,14 @@ New to Update: Footer & Breakpoints
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">
+                <a href="index.html" class="nav__logo">
                     GHIBLI.
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
+                            <a href="index.html" class="nav__link">
                                 <i class="ri-home-line"></i>
                                 <span>Home</span>
                             </a>
@@ -111,6 +119,20 @@ New to Update: Footer & Breakpoints
                             <a href="#products" class="nav__link">
                                 <i class="ri-t-shirt-line"></i>
                                 <span>Products</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="about-us.html" class="nav__link">
+                                <i class="ri-t-shirt-line"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="contacts.html" class="nav__link">
+                                <i class="ri-t-shirt-line"></i>
+                                <span>Contact</span>
                             </a>
                         </li>
                     </ul>
@@ -248,7 +270,7 @@ New to Update: Footer & Breakpoints
                 <div class="products__container container swiper">
                     <div class="swiper-wrapper">
                         <article class="products__card swiper-slide">
-                            <a href="https://www.rhodeskin.com/products/peptide-glazing-fluid"><img src="img/peptide.jpeg" alt="product image" class="products__img"></a>
+                            <a href="product-page.html"><img src="img/peptide.jpeg" alt="product image" class="products__img"></a>
 
                             <h2 class="products__title">
                                 Peptide Glazing Fluid
@@ -323,7 +345,7 @@ New to Update: Footer & Breakpoints
                                 <a href="#" class="footer__link">Category</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Contact info</a>
+                                <a href="contacts.html" class="footer__link">Contact info</a>
                             </li>
                         </ul>
                     </div>

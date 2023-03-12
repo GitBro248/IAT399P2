@@ -86,6 +86,124 @@ img {
   height: auto;
 }
 
+/*=============== FORM CSS ===============*/
+
+form{
+  background: rgba(199, 199, 199, 0.8);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+}
+
+form .title h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+form .half{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action{
+  margin-bottom: 32px;
+}
+
+form .action input{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"]{
+  background: white;
+  color: black;
+}
+
+form .icons a{
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+}
+
+@media (max-width: 480px){
+  form .half{
+    flex-direction: column;
+  }
+  form .half .item{
+    width: 100%;
+  }
+  form .action{
+    display: flex;
+    flex-direction: column;
+  }
+  form .action input{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -361,9 +479,140 @@ img {
     width: 120px;
 }
 
-    .brand__img:nth-child(even) {
-        margin-top: 2rem;
-    }
+.brand__img:nth-child(even) {
+    margin-top: 2rem;
+}
+
+/*=============== Product CSS ===============*/
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapper .img{
+  margin: 30px;
+  width: 30%;
+}
+
+.wrapper .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper .info{
+  width: 25%;
+  margin: 30px;
+  height: 80%;
+  color: #444;
+}
+
+.info h2,p, .size, .quantity, .cart, .buy{
+  padding: 15px;
+}
+
+.info h2{
+  margin-top: 100px;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.info p{
+  font-size: 16px;
+}
+
+/*= Size Select =*/
+.size{
+  width: 100%
+}
+
+.size .select{
+  display: flex;
+  height: 55px;
+  border: 1px solid #444;
+  padding: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.size .option-list{
+  position: relative;
+  padding: 20px;
+  margin-top: 2px;
+  background: #fff;
+  border: 1px solid #444;
+  display: none;
+}
+
+.size.click .option-list{
+  display: block;
+}
+
+.option-list .option{
+  position: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.option-list .option:hover{
+  background: #eaeaea;
+}
+
+.quantity h3{
+  margin-bottom: 10px;
+  /* margin-top: 20px; */
+}
+
+.quantity input{
+  padding: 20px;
+  width: 100px;
+  outline: none;
+}
+
+/* CART */
+.cart{
+  display: flex;
+  align-items: center;
+}
+
+.cart button{
+  width: 400px;
+  height: 55px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.cart i{
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 55px;
+  font-size: 30px;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cart.liked i{
+  color: red;
+}
+
+/* BUY */
+.buy button{
+  height: 55px;
+  width: 100%;
+  font-size: 20px;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+
 
 /*=============== FOOTER ===============*/
 .footer__container {
@@ -648,7 +897,7 @@ img {
     }
 
     .collection__container {
-        height: 760px;
+        height: 680px;
         margin-bottom: 2rem;
     }
 
@@ -691,4 +940,6 @@ img {
     body {
         zoom: 2.3;
     }
+
+
 }
