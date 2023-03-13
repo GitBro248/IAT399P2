@@ -509,7 +509,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   color: #444;
 }
 
-.info h2,p, .size, .quantity, .cart, .buy{
+.info h2, .size, .quantity, .cart, .buy{
   padding: 15px;
 }
 
@@ -520,6 +520,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 }
 
 .info p{
+  padding: 16px;
   font-size: 16px;
 }
 
