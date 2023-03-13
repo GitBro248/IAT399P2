@@ -1,0 +1,413 @@
+<!--IAT 339, Project 2
+By: James Halim, Asher 
+Class: IAT 339 
+Professor: Peter Loo
+TA: Kimia Aghaei
+-->
+
+<!--
+    P2 Progress Checklist:
+    1-some requirements are still not implemented: contact info-about us-checkout and payment forms.
+    2- when clicking on a product, the user is directed to the actual website of the products. 
+    please design a page that as detail about products designed by YOU.
+-->
+
+
+<!-- REFERENCES:
+I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
+web programming design exercise and is purely for educational purposes.
+Studio Ghibli logo: https://en.wikipedia.org/wiki/Studio_Ghibli
+HTML <img> tag tutorial: https://www.w3schools.com/tags/tag_img.asp
+MailChimp Pattern Library: https://ux.mailchimp.com/patterns/typography#typescale
+A Complete Guide to Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Styleguide Resources: http://styleguides.io/
+
+References:
+
+<FONTS>
+Lora font:
+https://fonts.google.com/specimen/Lora
+
+
+<IMAGES>
+Glossier:
+https://www.today.com/shop/glossier-black-friday-best-glossier-black-friday-deals-2021-t240117
+
+Rhode:
+https://www.getthegloss.com/beauty/skincare/hailey-bieber-skincare-brand-rhode
+
+Missha:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fmisshaus.com%2F&psig=AOvVaw1I0kJKpRvtQo9a1ad1Hy7A&ust=1678419530710000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjukZH2zf0CFQAAAAAdAAAAABAE
+
+Men Skincare Image:
+https://jingdaily.com/young-chinese-male-drive-skincare-market/
+
+Women Skincare Image:
+https://www.realsimple.com/beauty-fashion/skincare/anti-aging/best-skincare-routine-for-40s
+
+
+<CODE>
+Import Google Fonts in CSS
+https://www.w3docs.com/snippets/css/how-to-import-google-fonts-in-css-file.html
+
+Variable CSS:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+
+nth-child() Selector
+https://www.w3schools.com/cssref/sel_nth-child.php
+
+<ICONS>
+Fav Icon:
+https://www.onlinewebfonts.com/icon/470639
+
+Remix Icon:
+https://remixicon.com/
+
+New to Update: Footer & Breakpoints
+
+-->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>Ghibli Skin Care</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    GHIBLI.
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class="ri-home-line"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">
+                                <i class="ri-price-tag-3-line"></i>
+                                <span>New</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#collection" class="nav__link">
+                                <i class="ri-compass-line"></i>
+                                <span>Collection</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">
+                                <i class="ri-t-shirt-line"></i>
+                                <span>Products</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="about-us.html" class="nav__link">
+                                <i class="ri-t-shirt-line"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="contacts.html" class="nav__link">
+                                <i class="ri-t-shirt-line"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            New Product <br>
+                            Collection
+                        </h1>
+
+                        <p class="home__description">
+                            The new collection of our latest skincare products <br>
+                            from the best brands this year.
+                        </p>
+
+                        <a href="#new" class="button__link">
+                            Explore <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__images">
+                        <img src="img/rhode2.jpg" alt="Hailey Bieber's Rhode Product">
+                        <img src="img/cleansers.png" alt="An image of various skincare products">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section" id="new">
+                <h2 class="section__title">
+                    Latest Deals & Offers
+                </h2>
+
+                <div class="new__container container grid">
+                    <article class="new__card">
+                        <img src="img/rhodenew.png" alt="new image" class="new__img">
+
+                        <a href="#" class="new__link">
+                            <div class="new__data">
+                                <h2 class="new__title">
+                                    Rhode Deals
+                                </h2>
+                                <span class="new__subtitle">
+                                    Checkout the latest Rhode skincare products
+                                </span>
+                            </div>
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="new__card">
+                        <img src="img/glossiernew.webp" alt="new image" class="new__img">
+
+                        <a href="#" class="new__link">
+                            <div class="new__data">
+                                <h2 class="new__title">
+                                    Glossier Deals
+                                </h2>
+                                <span class="new__subtitle">
+                                    Shop the latest deals
+                                </span>
+                            </div>
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="new__card">
+                        <img src="img/misshanew.webp" alt="new image" class="new__img">
+
+                        <a href="#" class="new__link">
+                            <div class="new__data">
+                                <h2 class="new__title">
+                                    Missha Deals
+                                </h2>
+                                <span class="new__subtitle">
+                                    Checkout the best of 2022 collection
+                                </span>
+                            </div>
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== COLLECTION ====================-->
+            <section class="collection section" id="collection">
+                <div class="collection__container container">
+                    <div class="collection__explore">
+                        <div class="collection__data-men">
+                            <h2 class="collection__title">
+                                Men <br>
+                                Skincare
+                            </h2>
+                            <a href="#" class="button__link">
+                                Explore skincare for men  <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <img src="img/menskincare.jpeg" alt="collection image">
+                    </div>
+
+                    <div class="collection__explore">
+                        <img src="img/womenskincare.jpeg" alt="collection image">
+
+                        <div class="collection__data-women">
+                            <h2 class="collection__title">
+                                Women <br>
+                                Skincare
+                            </h2>
+                            <a href="#" class="button__link">
+                                Explore skincare for women  <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section" id="products">
+                <h2 class="section__title">
+                    Best Products
+                </h2>
+
+                <div class="products__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="products__card swiper-slide">
+                            <a href="product-page.html"><img src="img/peptide.jpeg" alt="product image" class="products__img"></a>
+
+                            <h2 class="products__title">
+                                Peptide Glazing Fluid
+                            </h2>
+                            <span class="products__price">
+                                $29.99
+                            </span>
+                        </article>
+
+                        <article class="products__card swiper-slide">
+                            <a href="https://www.glossier.com/products/milky-jelly-cleanser"><img src="img/glossier cleanser.png" alt="product image" class="products__img"></a>
+
+                            <h2 class="products__title">
+                                Milk Jelly Cleanser
+                            </h2>
+                            <span class="products__price">
+                                $10
+                            </span>
+                        </article>
+
+                    </div>
+                    <!-- <div class="swiper-button-next">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-line"></i>
+                </div> -->
+                </div>
+            </section>
+
+            <!--==================== BRANDS ====================-->
+            <section class="brand section">
+                <h2 class="section__title">
+                    Brands We Sell
+                </h2>
+
+                <div class="brand__container container grid">
+                    <img src="img/logo1.png" alt="logo image" class="brand__img">
+                    <img src="img/logo2.svg" alt="logo image" class="brand__img">
+                    <img src="img/logo3.png" alt="logo image" class="brand__img">
+                    <img src="img/logo4.png" alt="logo image" class="brand__img">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        GHIBLI
+                    </a>
+
+                    <p class="footer__description">
+                        Committed to bringing you the <br>
+                        best natural YOU.
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            Company
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Category</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html" class="footer__link">Contact info</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Blog
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Events</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Popular news</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Recent news</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Office
+                        </h3>
+
+                        <p class="footer__information">
+                            Monday - Friday <br>
+                            9AM - 9PM
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Contact us
+                        </h3>
+
+                        <ul class="footer__social">
+                            <!-- Insert your name from your facebook page -->
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <!-- Insert your name from your instagram page -->
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__info container">
+                <span class="footer__copy">
+                    &#169; GHIBLI. All rights reserved
+                </span>
+
+                <a href="#" class="footer__privacy">
+                    Terms & Conditions
+                </a>
+            </div>
+        </footer>
+
+    </body>
+</html>
