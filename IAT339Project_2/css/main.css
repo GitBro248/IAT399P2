@@ -552,7 +552,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 }
 
 .option-list .option{
-  position: flex;
+  position: relative;
   height: 55px;
   cursor: pointer;
   padding: 0 10px;
@@ -616,7 +616,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 /*=============== FOOTER ===============*/
 .footer__container {
-    row-gap: 3rem;
+    row-gap: 8rem;
 }
 
 .footer__logo {
@@ -680,7 +680,10 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     }
 
 .footer__info {
-    margin-top: 6rem;
+    
+ 
+    margin-top: auto;
+
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
@@ -942,4 +945,172 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     }
 
 
+}
+
+/* CSS For Checkout*/
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #464748, #8c8b8b, #464748);
+    background-image: -moz-linear-gradient(left, #464748, #8c8b8b, #464748);
+  
+    background-image: -o-linear-gradient(left, #464748, #8c8b8b, #464748);
+}
+
+/* Product page
+----------------------------*/
+.product_wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-left: 8px;
+}
+
+.product_arrow {
+    position: absolute;
+    left: 157px;
+    bottom: 37px;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #464748;
+    border-bottom: 10px solid transparent;
+}
+
+.product_main {
+    position: relative;
+    width: 100%;
+}
+
+    .product_main img {
+        width: 100%;
+    }
+
+.product_title {
+    padding-bottom: 10px;
+    margin: 0px;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #464748;
+}
+
+.product_desc {
+    margin: 0px;
+    color: #717375;
+    font-size: 12px;
+}
+
+.product_price {
+    
+    color: #464748;
+}
+
+
+/* CHECKOUT CSS
+----------------------------*/
+.checkout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* container size for checkout window
+----------------------------*/
+.checkout_wrap {
+    width: 300px;
+    height: 300px;
+    background-color: #F7E4AA;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+}
+/* Black field information entry CSS
+----------------------------*/
+.checkout_details {
+    height: auto;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #464748;
+    position: relative;
+    height: 100%;
+
+    box-sizing: border-box;
+}
+
+.checkout_title {
+    margin: 0px;
+    padding: 10px 0px;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.checkout_form {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+
+    .checkout_form input {
+        width: 100%;
+        height: auto;
+        padding: 8px 10px;
+        margin: 8px 0px;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #717375;
+        background-color: transparent;
+        color: #F7E4AA;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.020);
+        font-family: 'Poppins', sans-serif;
+    }
+
+        .checkout_form input:focus {
+            outline-width: 0;
+        }
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #9e9e9e;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #717375;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #717375;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #717375;
+}
+
+.checkout_pay {
+    width: 100%;
+    height: auto;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    border: none;
+    background-color: #F7E4AA;
+    color: #2a2a2a;
+    border-radius: 3px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
