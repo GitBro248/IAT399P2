@@ -948,10 +948,10 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 }
 
-/* CSS For Checkout*/
+/* CSS For Checkout
 * {
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 
 hr {
@@ -1044,7 +1044,6 @@ hr {
     background-color: #464748;
     position: relative;
     height: 100%;
-
     box-sizing: border-box;
 }
 
@@ -1063,24 +1062,85 @@ hr {
     padding: 10px 0px;
 }
 
-    .checkout_form input {
-        width: 100%;
-        height: auto;
-        padding: 8px 10px;
-        margin: 8px 0px;
-        font-size: 14px;
-        border: none;
-        border-bottom: 1px solid #717375;
-        background-color: transparent;
-        color: #F7E4AA;
-        box-sizing: border-box;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.020);
-        font-family: 'Poppins', sans-serif;
-    }
+.checkout_form input {
+    width: 100%;
+    height: auto;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #717375;
+    background-color: transparent;
+    color: #F7E4AA;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.020);
+    /* font-family: 'Poppins', sans-serif; */
+}
 
-        .checkout_form input:focus {
-            outline-width: 0;
-        }
+/* Cart Items */
+.cart-page{
+  margin: 80px auto;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th{
+  text-align: left;
+  padding: 5px;
+  color: rgb(10, 10, 10);
+  background: #d5d5d5;
+  font-weight: normal;
+  margin-top: 100px;
+}
+
+
+td{
+  padding: 10px 25px;
+}
+
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a{
+  color: #EC9900;
+  font-size: 12px;
+}
+
+td img{
+  width: 120px;
+  height: 120px;
+  /* margin-left: 160px; */
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table{
+  border-top: 3px solid #EC9900;
+  width: 100%;
+  max-width: 350px;
+}
+
+td:last-child{
+  text-align: right;
+}
+
+.checkout_form input:focus {
+    outline-width: 0;
+}
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
@@ -1112,6 +1172,6 @@ hr {
     color: #2a2a2a;
     border-radius: 3px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
