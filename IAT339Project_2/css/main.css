@@ -601,6 +601,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   cursor: pointer;
 }
 
+
 .cart.liked i{
   color: red;
 }
@@ -1017,6 +1018,7 @@ hr {
 /* CHECKOUT CSS
 ----------------------------*/
 .checkout {
+    padding-top: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
