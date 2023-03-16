@@ -5,13 +5,6 @@ Professor: Peter Loo
 TA: Kimia Aghaei
 -->
 
-<!--
-    P2 Progress Checklist:
-    1-some requirements are still not implemented: contact info-about us-checkout and payment forms.
-    2- when clicking on a product, the user is directed to the actual website of the products. 
-    please design a page that as detail about products designed by YOU.
--->
-
 
 <!-- REFERENCES:
 I do not use the rights to the Studio Ghibli logo or any of its contents. This is merely a 
@@ -30,6 +23,10 @@ https://fonts.google.com/specimen/Lora
 
 
 <IMAGES>
+
+Additional Images:
+https://unsplash.com/
+
 Glossier:
 https://www.today.com/shop/glossier-black-friday-best-glossier-black-friday-deals-2021-t240117
 
@@ -62,8 +59,6 @@ https://www.onlinewebfonts.com/icon/470639
 
 Remix Icon:
 https://remixicon.com/
-
-New to Update: Footer & Breakpoints
 
 -->
 
@@ -267,28 +262,41 @@ New to Update: Footer & Breakpoints
                     Best Products
                 </h2>
 
-                <div class="products__container container swiper">
-                    <div class="swiper-wrapper">
-                        <article class="products__card swiper-slide">
-                            <a href="product-page.html"><img src="img/peptide.jpeg" alt="product image" class="products__img"></a>
+                <div class="new__container container grid">
 
-                            <h2 class="products__title">
-                                Peptide Glazing Fluid
-                            </h2>
-                            <span class="products__price">
-                                $29.99
-                            </span>
+                    <div class="new__container container grid">
+
+                        <article class="new__card">
+                            <a href="product-page.html"><img src="img/peptide.jpeg" alt="product image" class="products__img"></a>
+    
+                            <a href="#" class="new__link">
+                                <div class="new__data">
+                                    <h2 class="products__title">
+                                        Peptide Glazing Fluid
+                                    </h2>
+                                    <span class="products__price">
+                                        $29.99
+                                    </span>
+                                </div>
+    
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
                         </article>
 
-                        <article class="products__card swiper-slide">
-                            <a href="https://www.glossier.com/products/milky-jelly-cleanser"><img src="img/glossier cleanser.png" alt="product image" class="products__img"></a>
-
-                            <h2 class="products__title">
-                                Milk Jelly Cleanser
-                            </h2>
-                            <span class="products__price">
-                                $10
-                            </span>
+                        <article class="new__card">
+                            <a href="product-page2.html"><img src="img/glossier cleanser.png" alt="product image" class="products__img"></a>
+    
+                            <a href="#" class="new__link">
+                                <div class="new__data">
+                                    <h2 class="products__title">
+                                        Milk Jelly Cleanser
+                                    </h2>
+                                    <span class="products__price">
+                                        $10
+                                    </span>
+    
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
                         </article>
 
                     </div>
@@ -365,6 +373,16 @@ New to Update: Footer & Breakpoints
                             <li>
                                 <a href="#" class="footer__link">Recent news</a>
                             </li>
+                            <li>
+                                <a href="reference-page.html" class="footer__link">Website Citations</a>
+                            </li>
+                            <li>
+                                <a href="styleguide.html" class="footer__link">Branding & Styleguide</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/GitBro248/IAT399P2.git" class="footer__link">Github Repo</a>
+                            </li>
+
                         </ul>
                     </div>
 
@@ -395,6 +413,8 @@ New to Update: Footer & Breakpoints
                             </a>
                         </ul>
                     </div>
+
+
                 </div>
             </div>
 
